@@ -1,0 +1,43 @@
+{
+  "name": "@nxp4code/botbuilder-adapter-webex",
+  "version": "1.0.12",
+  "description": "Connect Botkit or BotBuilder to Webex Teams",
+  "main": "./lib/index.js",
+  "typings": "./lib/index.d.ts",
+  "files": [
+    "/lib",
+    "/src"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc ; nyc mocha tests/*.tests.js",
+    "eslint": "./node_modules/.bin/eslint --fix src/*",
+    "pack": "npm pack"
+  },
+  "author": "Naman Patel",
+  "license": "MIT",
+  "keywords": [
+    "webex",
+    "@nxp4code/botkit",
+    "botbuilder",
+    "botframework",
+    "bots",
+    "chatbots",
+    "azure"
+  ],
+  "homepage": "https://github.com/howdyai/botkit/blob/master/packages/botbuilder-adapter-webex#readme",
+  "bugs": {
+    "url": "https://github.com/NxP4Code/nxp-botkit/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NxP4Code/npx-botbuilder-adapter-webex"
+  },
+  "dependencies": {
+    "@nxp4code/botkit": "^4.15.1",
+    "botbuilder": "^4.15.0",
+    "debug": "^4.1.0",
+    "url": "^0.11.0",
+    "@webex/webex-core": "^3.5.0"
+  }
+}
